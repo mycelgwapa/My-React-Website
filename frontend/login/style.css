@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html, body {
+    height: 100%;
+}
+
+.container {
+    width: 25rem;
+    height: 25rem;
+    border: 2px solid rgb(201, 201, 226);
+    background: rgb(225, 235, 189);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Added to stack items vertically */
+    margin: auto; /* Added to horizontally center the container */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: .5s;
+    flex-wrap: wrap;
+}
+.container:hover{
+    border: 2px solid rgb(12, 12, 238);
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input1,
+.input2 {
+    width: 50%; /* Adjust width as needed */
+    margin: 1rem 0; /* Adjust margin as needed */
+    color: #000;
+    cursor: pointer;
+}
+
+input[type="username"],
+input[type="password"] {
+    width: 100%;
+    padding: 0.5rem;
+    border: none;
+    transition: .5s ease;
+    color: #000;
+}
+input[type="username"]:hover,
+input[type="password"]:hover {
+    border-radius: 20px;
+    border: 1px solid #000;
+}
+
+
+button {
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    background-color: rgb(68, 179, 96);
+    color: white;
+    border: none;
+    transition:  0.5s ease;
+    width: 50%;
+}
+
+button:hover {
+    background-color: rgb(83, 121, 109);
+    border: 1px solid #fff;
+    border-radius: 20px;
+
+}

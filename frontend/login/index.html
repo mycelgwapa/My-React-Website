@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Login!</title>
+</head>
+<body>
+    <form action="" class="container" onsubmit="return validateForm()">
+    <div class="input1">    
+        
+        <label for="username">Username:</label>
+        <input type="username" id="username" required placeholder="username...">
+    </div>
+    <div class="input2">
+        <label for="password">Password:</label>
+        <input type="password" id="password" required placeholder="password...">
+    </div>
+        <button onclick="redirect()">Login</button>
+        <p id="error-message" style="color: red; display: none;">Incorrect username or password. Please try again.</p>
+    </form>
+
+    <script src="index.js"></script>
+</body>
+</html>
